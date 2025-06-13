@@ -8,7 +8,7 @@ const port = 3000;
 const app = express();
 
 // connect to mongodb & listen for requests
-const dbURI = "mongodb+srv://suryanshg10:@nodejs.2f3e7ph.mongodb.net/?retryWrites=true&w=majority&appName=nodejs";
+const dbURI = "mongodb+srv://suryanshg10:qwerty123@nodejs.2f3e7ph.mongodb.net/?retryWrites=true&w=majority&appName=nodejs";
 
 mongoose.connect(dbURI)
   .then(console.log("success"))

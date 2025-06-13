@@ -1,8 +1,8 @@
 <html lang="en">
-<%- include("./partials/head.ejs") %>
+<%- include("../partials/head.ejs") %>
 
 <body>
-  <%- include("./partials/nav.ejs") %>
+  <%- include("../partials/nav.ejs") %>
 
   <div class="blogs content">
     <h2>All blogs</h2>
@@ -10,7 +10,7 @@
     <% if (blogs.length > 0) { %>
       <% blogs.forEach(blog => { %>
         <a class="single" href="/blogs/<%= blog._id %>">
-          <h3 class="title"><%= blog.title %></h3>
+          <h3 class="title"><%= blog.title %></h3>                              <!-- remember to ask where is this class being used  -->
           <p class="snippet"><%= blog.snippet %></p>
         </a>
       <% }) %>
@@ -20,6 +20,6 @@
     
   </div>
 
-  <%- include("./partials/footer.ejs") %>
+  <%- include("../partials/footer.ejs") %>
 </body>
 </html>
